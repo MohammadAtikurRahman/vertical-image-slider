@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+
+
+    <style>
+        .container-x1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            /*fraction*/
+        }
+
+        .container-x2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            /*fraction*/
+        }
+
+        .section {
+            border: 1px solid;
+        }
+
+        @media (max-width: 768px) {
+
+            /*breakpoint*/
+            .container-x1 {
+                grid-template-columns: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            /*breakpoint*/
+            .container-x2 {
+                grid-template-columns: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-x1">
+        <div class="section">1</div>
+        <div class="section">2</div>
+        <div class="section">3</div>
+    </div>
+
+
+    <div class="container-x2">
+        <div class="section">4</div>
+        <div class="section">5</div>
+        <div class="section">6</div>
+        <div class="section">7</div>
+    </div>
+
+
+
+    <div class="container-x1">
+        <div class="section">8</div>
+        <div class="section">9</div>
+        <div class="section">10</div>
+
+    </div>
+    <div class="container-x1">
+        <div class="section">11</div>
+        <div class="section">12</div>
+        <div class="section">13</div>
+    </div>
+
+    <div class="container-x1">
+        <div class="section">11</div>
+        <div class="section">12</div>
+        <div class="section">13</div>
+    </div>
+
+
+</body>
+
+</html>
